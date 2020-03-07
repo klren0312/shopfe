@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <div class="block">test</div>
     <nut-button>
       去结算
     </nut-button>
@@ -31,5 +32,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.block {
+  width: 100px;
+  height: 100px;
 }
 </style>

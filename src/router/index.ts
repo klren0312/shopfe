@@ -19,7 +19,7 @@ const innerPageRoutes = [
     children: [{
       name: 'homePage',
       path: '',
-      component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+      component: () => import(/* webpackChunkName: "home" */ '../views/HomePage/index.vue')
     }]
   }
 ]

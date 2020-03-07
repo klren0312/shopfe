@@ -1,5 +1,5 @@
 <template>
-  <div>efafew
+  <div>
     <div class="main-content">
       <router-view/>
     </div>
