@@ -1,6 +1,6 @@
 (function (window, document) {
-  function resize () {
-    var ww = window.innerWidth
+  function resize (): void {
+    let ww: number = window.innerWidth
     if (ww > window.screen.width) {
       window.requestAnimationFrame(resize)
     } else {

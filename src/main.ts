@@ -4,10 +4,11 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import './assets/responsive'
 
-import { Button, Toast, Swiper, Tabbar } from '@nutui/nutui'
+import { Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown } from '@nutui/nutui'
 
-[Button, Toast, Swiper, Tabbar].forEach(v => v.install(Vue))
+[Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown].forEach(v => v.install(Vue))
 
 Vue.config.productionTip = false
 

@@ -9,11 +9,6 @@ module.exports = {
           @import "@/assets/custom_theme.scss";
           @import "@nutui/nutui/dist/styles/index.scss";
           `
-      },
-      postcss: {
-        plugins: [
-
-        ]
       }
     }
   }
