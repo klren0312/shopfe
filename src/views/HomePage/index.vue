@@ -43,9 +43,16 @@
       </div>
     </div>
     <div class="white-space"></div>
-    <div class="no-auth">
+    <div class="no-info">
       <div class="text">口罩进行实名认证预约购买，请您及时进行实名认证</div>
-      <nut-button class="goto-btn">
+      <nut-button class="goto-btn" @click="toAuth">
+        去填写
+      </nut-button>
+    </div>
+    <div class="white-space"></div>
+    <div class="no-info">
+      <div class="text">未查询到你的收货地址，请及时填写</div>
+      <nut-button class="goto-btn" @click="toArea">
         去填写
       </nut-button>
     </div>
@@ -71,6 +78,14 @@ export default {
   name: 'HomePage',
   data () {
     return {
+    }
+  },
+  methods: {
+    toAuth () {
+      this.$router.push('/authPage')
+    },
+    toArea () {
+      this.$router.push('/areaPage')
     }
   }
 }
@@ -165,7 +180,7 @@ export default {
     justify-content: space-between;
   }
 }
-.no-auth {
+.no-info {
   padding: 15px 26px;
   text-align: center;
   .text {

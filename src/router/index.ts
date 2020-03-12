@@ -21,6 +21,24 @@ const innerPageRoutes = [
       path: '',
       component: () => import(/* webpackChunkName: "home" */ '../views/HomePage/index.vue')
     }]
+  },
+  {
+    path: '/authPage',
+    component: Layout,
+    children: [{
+      name: 'authPage',
+      path: '',
+      component: () => import(/* webpackChunkName: "auth" */ '../views/AuthPage/index.vue')
+    }]
+  },
+  {
+    path: '/areaPage',
+    component: Layout,
+    children: [{
+      name: 'areaPage',
+      path: '',
+      component: () => import(/* webpackChunkName: "area" */ '../views/AreaPage/index.vue')
+    }]
   }
 ]
 
