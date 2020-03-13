@@ -39,6 +39,15 @@ const innerPageRoutes = [
       path: '',
       component: () => import(/* webpackChunkName: "area" */ '../views/AreaPage/index.vue')
     }]
+  },
+  {
+    path: '/resultPage',
+    component: Layout,
+    children: [{
+      name: 'resultPage',
+      path: '',
+      component: () => import(/* webpackChunkName: "result" */ '../views/ResultPage/index.vue')
+    }]
   }
 ]
 

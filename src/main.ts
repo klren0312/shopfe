@@ -6,9 +6,9 @@ import router from './router'
 import store from './store'
 import './assets/responsive'
 
-import { Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown, TextInput, Picker } from '@nutui/nutui'
+import { Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown, TextInput, Picker, Dialog } from '@nutui/nutui'
 
-[Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown, TextInput, Picker].forEach(v => v.install(Vue))
+[Button, ButtonGroup, Toast, Swiper, Tabbar, Price, CountDown, TextInput, Picker, Dialog].forEach(v => v.install(Vue))
 
 Vue.config.productionTip = false
 

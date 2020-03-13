@@ -43,19 +43,25 @@
       </div>
     </div>
     <div class="white-space"></div>
-    <div class="no-info">
+    <div class="address" v-if="isArea" @click="toArea">
+      <div>配送至</div>
+      <div class="text"><img src="@/assets/address.png"> 安徽省合肥市高新区自杀大楼</div>
+    </div>
+    <div class="no-info" v-if="!isAuth">
       <div class="text">口罩进行实名认证预约购买，请您及时进行实名认证</div>
       <nut-button class="goto-btn" @click="toAuth">
         去填写
       </nut-button>
     </div>
-    <div class="white-space"></div>
-    <div class="no-info">
-      <div class="text">未查询到你的收货地址，请及时填写</div>
-      <nut-button class="goto-btn" @click="toArea">
-        去填写
-      </nut-button>
-    </div>
+    <template v-if="!isArea">
+      <div class="white-space"></div>
+      <div class="no-info">
+        <div class="text">未查询到你的收货地址，请及时填写</div>
+        <nut-button class="goto-btn" @click="toArea">
+          去填写
+        </nut-button>
+      </div>
+    </template>
     <div class="info-title">产品详情</div>
     <div class="product-info">
       <img class="info-img" src="@/assets/info.png" alt="">
@@ -65,7 +71,7 @@
         <nut-button class="left-btn">
           重新开团
         </nut-button>
-        <nut-button class="right-btn">
+        <nut-button class="right-btn" @click="joinBuy">
           参团购买
         </nut-button>
       </nut-buttongroup>
@@ -78,6 +84,9 @@ export default {
   name: 'HomePage',
   data () {
     return {
+      isAuth: true,
+      isArea: true,
+      loading: false
     }
   },
   methods: {
@@ -86,6 +95,31 @@ export default {
     },
     toArea () {
       this.$router.push('/areaPage')
+    },
+    joinBuy () {
+      this.$router.push('/resultPage')
+    },
+    queueTip () {
+      this.$dialog({
+        title: '32人拼团排队中',
+        lockBgScroll: true,
+        noOkBtn: true,
+        cancelBtnTxt: '知道了',
+        content: '当前页面人数太多，请您耐心等待'
+      })
+    },
+    noNetTip () {
+      this.$dialog({
+        title: '网络异常',
+        lockBgScroll: true,
+        noOkBtn: true,
+        cancelBtnTxt: '刷新网络',
+        content: '当前网络波动异常，请您刷新重试',
+        onCancelBtn: () => {
+          this.loading = this.$toast.loading()
+          setTimeout(() => this.loading.hide(), 2000)
+        }
+      })
     }
   }
 }
@@ -202,6 +236,21 @@ export default {
 .info-img {
   width: 100%;
   vertical-align: top;
+}
+.address {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #999999;
+  .text {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333333;
+  }
 }
 .footer {
   position: relative;

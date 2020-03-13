@@ -23,7 +23,6 @@
     </nut-button>
     <nut-picker
     :is-visible="show"
-    title="请选择城市"
     :default-value-data="defaultValueData"
     :list-data="custmerCityData"
     @close="switchPicker('show')"
@@ -74,21 +73,16 @@ export default {
         details: ''
       },
       show: false,
-      data: {
-        北京: ['北京'],
-        黑龙江: ['哈尔滨', '绥化', '漠河', '大兴安岭', '牡丹江', '佳木斯', '齐齐哈尔', '大庆', '五大连池'],
-        江西: ['九江', '南昌', '赣州'],
-        上海: ['上海'],
-        重庆: ['重庆'],
-        内蒙古: ['呼和浩特', '呼和浩特1', '呼和浩特2', '呼和浩特3', '呼和浩特4', '呼和浩特5', '呼和浩特6', '呼和浩特7']
-      },
-      dataSub: {
-        上海: ['测试1', '测试2'],
-        北京: ['西城区', '东城区', '大兴区', '朝阳区', '海淀区'],
-        南昌: ['青山湖区', '西湖区', '宏都中路', '梦时代', '八一广场'],
-        绥化: ['明水', '拜泉'],
-        哈尔滨: ['道里区', '道外区']
-      },
+      custmerCityData: [
+        [{
+          label: 1,
+          value: '北京'
+        },
+        {
+          label: 2,
+          value: '上海'
+        }]
+      ],
       defaultValueData: null
     }
   },
@@ -112,6 +106,9 @@ export default {
           this.$set(this.custmerCityData, index + 1, resItems.array)
         }
       }, 100)
+    },
+    switchPicker (param) {
+      this[`${param}`] = !this[`${param}`]
     }
   }
 }

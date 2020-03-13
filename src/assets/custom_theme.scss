@@ -1,0 +1,21 @@
+$primary-color: #FF6A16;
+$normal-color: #848484;
+$link-color: $primary-color;
+$link-hover-color: mix($link-color , #000, 80%);
+$title-color: #2D2D2D;
+$text-color: #848484;
+$light-color: #F6F6F6;
+$dark-color: #DADADA;
+
+
+.nut-dialog-title {
+  color: #333;
+  font-size: 18px;
+}
+.nut-dialog-content {
+  font-size: 15px;
+}
+
+.nut-dialog-btn:only-child {
+  font-size: 18px;
+}
