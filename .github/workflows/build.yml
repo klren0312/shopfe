@@ -2,7 +2,7 @@ name: shopfe
 on:
   push:
     branches:
-    - master
+    - kz
 jobs:  
   deploy:
     runs-on: ubuntu-latest
@@ -24,7 +24,7 @@ jobs:
     - name: Build and Deploy Repo
       uses: JamesIves/github-pages-deploy-action@releases/v3-test
       with:
-        BASE_BRANCH: master   
+        BASE_BRANCH: kz   
         BRANCH: gh-pages
         FOLDER: dist
         CLEAN: true
