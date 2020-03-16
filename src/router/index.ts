@@ -48,6 +48,15 @@ const innerPageRoutes = [
       path: '',
       component: () => import(/* webpackChunkName: "result" */ '../views/ResultPage/index.vue')
     }]
+  },
+  {
+    path: '/buyPage',
+    component: Layout,
+    children: [{
+      name: 'buyPage',
+      path: '',
+      component: () => import(/* webpackChunkName: "buy" */ '../views/BuyPage/index.vue')
+    }]
   }
 ]
 

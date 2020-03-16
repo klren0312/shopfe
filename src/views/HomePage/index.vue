@@ -68,7 +68,7 @@
     </div>
     <div class="footer">
       <nut-buttongroup class="btn-group">
-        <nut-button class="left-btn">
+        <nut-button class="left-btn" @click="openGroup">
           重新开团
         </nut-button>
         <nut-button class="right-btn" @click="joinBuy">
@@ -98,6 +98,9 @@ export default {
     },
     joinBuy () {
       this.$router.push('/resultPage')
+    },
+    openGroup () {
+      this.$router.push('/buyPage')
     },
     queueTip () {
       this.$dialog({
