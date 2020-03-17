@@ -1,30 +1,30 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3022d3b5a3217888325",
+    "revision": "53d1967c89cacbf0bc57",
     "url": "/shopfe/css/app.7fb04086.css"
   },
   {
-    "revision": "0fcad10e99a3d9e3c890",
+    "revision": "3e09d9f58c9bc8f4ee72",
     "url": "/shopfe/css/area.73e3b7c9.css"
   },
   {
-    "revision": "a74f2fa5282aef030aa0",
+    "revision": "1db69216be367a237bbb",
     "url": "/shopfe/css/auth.006ece60.css"
   },
   {
-    "revision": "302f047eb5c8d7fe3448",
-    "url": "/shopfe/css/buy.ad24e0f6.css"
+    "revision": "f8d1280d013d37c12515",
+    "url": "/shopfe/css/buy.5c07bd52.css"
   },
   {
     "revision": "690943add205aa824e55",
     "url": "/shopfe/css/chunk-vendors.17e5a11d.css"
   },
   {
-    "revision": "eed6b631a981a8dc4c81",
+    "revision": "bfa457b61af9e4c2928c",
     "url": "/shopfe/css/home.9b97a4a1.css"
   },
   {
-    "revision": "029e6bc17963692fd321",
+    "revision": "0e707c5a49e14b59a8fd",
     "url": "/shopfe/css/result.501df822.css"
   },
   {
@@ -40,40 +40,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/shopfe/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "93213fcdf7a370b7654ec17b352070d8",
+    "revision": "9a846615a69a38f7feeb45414e470a1b",
     "url": "/shopfe/index.html"
   },
   {
-    "revision": "a496612bf25a0a891ff4",
-    "url": "/shopfe/js/about.d230da4b.js"
+    "revision": "9ac421b3085ceb0c5e38",
+    "url": "/shopfe/js/about.ff22d767.js"
   },
   {
-    "revision": "d3022d3b5a3217888325",
-    "url": "/shopfe/js/app.eb5094b5.js"
+    "revision": "53d1967c89cacbf0bc57",
+    "url": "/shopfe/js/app.6c46f0e8.js"
   },
   {
-    "revision": "0fcad10e99a3d9e3c890",
-    "url": "/shopfe/js/area.5f963d17.js"
+    "revision": "3e09d9f58c9bc8f4ee72",
+    "url": "/shopfe/js/area.782c60d9.js"
   },
   {
-    "revision": "a74f2fa5282aef030aa0",
-    "url": "/shopfe/js/auth.1703647c.js"
+    "revision": "1db69216be367a237bbb",
+    "url": "/shopfe/js/auth.480919b4.js"
   },
   {
-    "revision": "302f047eb5c8d7fe3448",
-    "url": "/shopfe/js/buy.e93c6dca.js"
+    "revision": "f8d1280d013d37c12515",
+    "url": "/shopfe/js/buy.15a4f920.js"
   },
   {
     "revision": "690943add205aa824e55",
     "url": "/shopfe/js/chunk-vendors.7b03cf95.js"
   },
   {
-    "revision": "eed6b631a981a8dc4c81",
-    "url": "/shopfe/js/home.b9c8da8d.js"
+    "revision": "bfa457b61af9e4c2928c",
+    "url": "/shopfe/js/home.68fb879f.js"
   },
   {
-    "revision": "029e6bc17963692fd321",
-    "url": "/shopfe/js/result.84f6db58.js"
+    "revision": "0e707c5a49e14b59a8fd",
+    "url": "/shopfe/js/result.43b2f209.js"
   },
   {
     "revision": "fb3a1fbebce2fb9496d1ecbfc9625287",
