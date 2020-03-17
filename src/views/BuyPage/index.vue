@@ -38,6 +38,9 @@
       </div>
       <div class="tip">注：发起拼团团长可以额外获得<span class="light">口罩50个</span></div>
     </div>
+    <nut-button class="next-btn" @click="toNext">
+      下一步
+    </nut-button>
   </div>
 </template>
 <script>
@@ -153,5 +156,12 @@ export default {
         color: #FF6A16;
       }
     }
+  }
+  .next-btn {
+    display: block;
+    margin: 30px auto 0;
+    width:345px;
+    height:44px;
+    background:linear-gradient(90deg,rgba(255,137,32,1) 0%,rgba(255,81,14,1) 100%);
   }
 </style>
